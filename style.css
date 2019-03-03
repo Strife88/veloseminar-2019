@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:700,900&subset=cyrillic-ext');
+
+/*
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+h1 {
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 900;
+line-height: 64px;
+font-size: 64px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+h2 {
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: bold;
+line-height: 36px;
+font-size: 32px;
+color: #4A4A4A;
+}
+h3 {
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: 26px;
+font-size: 20px;
+color: #FFFFFF; 
+}
+h4 {
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: 24px;
+font-size: 16px;
+
+}
+h5 {
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: bold;
+line-height: 20px;
+font-size: 12px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+
+* {
+    margin: 0px
+}
+.backdrop{
+    display: block;
+    background: linear-gradient(85.49deg, rgba(0, 0, 0, 0.5) 32.65%, rgba(68, 68, 68, 0) 86.81%), url(/src/Backdrop.jpg) 50% no-repeat;
+background-blend-mode: darken, normal;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:2fr 4fr 6fr;
+    grid-template-rows:2fr 4fr 2fr;
+}
+.info {
+grid-row-start: 2;
+grid-column-start: 2;
+grid-row-end: 3;
+grid-column-end: 3;
+}
+
+.details{
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 40px;
+        padding: 32px;
+    
+}
+.main {
+}
+.contact {
+    margin-top: 16px;
+}
+.contact .info {
+    margin-top: 8px;
+    display:flex;
+    flex-flow:wrap;
+}
+.instagramm, .whatsup {
+    display: flex;
+    align-items: center;
+    
+}
+.instagramm div{
+margin-right: 8px;
+width: 12px;
+height: 12px;
+background: url(src/inst.png);
+}
+.whatsup div {
+margin-right: 8px;
+width: 12px;
+height: 12px;
+background: url(src/watsup.png);
+}
+.info h4 {
+    margin-right: 24px;
+    color: 4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #4a4a4a;
+}
+
+.main > h3 {
+    color:#777;
+    margin-bottom: 12px;
+}
+.main > h4 {
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: 24px;
+font-size: 16px;
+
+color: #777777; 
+}
+
+.main >h2 {
+    margin-top: 12px;
+}
+.when >h5 {
+    padding: 4px 8px;
+    background: #00969E;
+    display: inline-block;
+}
+.when {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    flex-flow:wrap;
+}
+.when > h2 {
+    color:#00969E;
+        margin-right: 24px;
+    margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size:32px;
+    }
+    h3 {
+        font-size:16px;
+    }
+    h2 {
+        font-size:24px;
+        line-height: 28px
+    }
+    .backdrop {
+    grid-template-columns:1fr;
+    grid-template-rows:2fr 4fr 2fr;
+    background: rgba(0, 0, 0, 0.9) 32.65%, rgba(68, 68, 68, 0.9) 86.81%), url(/src/Backdrop.jpg), 50% no-repeat;
+    }
+    
+   .backdrop > .info {
+    padding: 32px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    }
+}
+
