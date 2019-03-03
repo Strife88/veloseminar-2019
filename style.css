@@ -53,7 +53,7 @@ color: #FFFFFF;
 }
 .backdrop{
     display: block;
-    background: linear-gradient(85.49deg, rgba(0, 0, 0, 0.5) 32.65%, rgba(68, 68, 68, 0) 86.81%), url(/src/Backdrop.jpg) 50% no-repeat;
+    background: linear-gradient(85.49deg, rgba(0, 0, 0, 0.5) 32.65%, rgba(68, 68, 68, 0) 86.81%), url(../src/Backdrop.jpg) 50% no-repeat;
 background-blend-mode: darken, normal;
     background-size: cover;
     width: 100%;
@@ -158,7 +158,7 @@ color: #777777;
     .backdrop {
     grid-template-columns:1fr;
     grid-template-rows:2fr 4fr 2fr;
-    background: rgba(0, 0, 0, 0.9) 32.65%, rgba(68, 68, 68, 0.9) 86.81%), url(/src/Backdrop.jpg), 50% no-repeat;
+    background: rgba(0, 0, 0, 0.9) 32.65%, rgba(68, 68, 68, 0.9) 86.81%), url(../src/Backdrop.jpg), 50% no-repeat;
     }
     
    .backdrop > .info {
