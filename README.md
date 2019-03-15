@@ -1,1 +1,0 @@
-# veloseminar-2019
